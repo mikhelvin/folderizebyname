@@ -15,6 +15,7 @@ Typically stems (audio exports for a single cue, split by instrument) from [Logi
 **Note:** An arbitrary 128 folder limit is currently hardcoded in to reduce the creation of superflous folders, though the script does cleanup empty folders at the end on its own. Change the default value of 128 if you're working with more cues than that.
 
 **Sample input:**
+<pre>
 base_directory/
 ├── Composer-Score.Brass-Keys.1.wav
 ├── Composer-Score.Brass-Keys.2.wav
@@ -32,8 +33,10 @@ base_directory/
 ├── Composer-Score.Synths-FX.2.wav
 ├── Composer-Score.Synths-FX.3.wav
 └── folderize.sh
+</pre>
 
 **Sample output after folderize.sh:**
+<pre>
 base_directory/
 ├── 1/
 |   ├── Composer-Score.Perc.1.wav
@@ -54,3 +57,4 @@ base_directory/
 |   ├── Composer-Score.MIX.3.wav
 |   └── Composer-Score.Synths-FX.3.wav
 └── folderize.sh
+</pre>
