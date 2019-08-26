@@ -10,7 +10,8 @@
 for i in {1..128}; do
     mkdir -p "$i" && 
     mv *."$i".wav "$i"
+done
 
 find . -type d -empty -delete
 
-done
+
