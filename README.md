@@ -12,7 +12,7 @@ Typically stems (audio exports for a single cue, split by instrument) from [Logi
 2. Ensure execution priveleges are enabled on `folderize.sh` (use command `chmod +x folderize.sh` if needed).
 3. `cd` into the folder with your files and the script, and run the command `./folderize.sh`. 
 
-**Note:** An arbitrary 128 folder limit is currently hardcoded in to reduce the creation of superflous folders, though the script does cleanup empty folders at the end on its own. Change the default value of 128 if you're working with more cues than that.
+**Note:** An arbitrary 1024 max loop limit is hardcoded in case file search does not properly halt. Change this value if you're working with more cues than that.
 
 **Sample input:**
 <pre>
