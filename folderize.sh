@@ -8,8 +8,7 @@
 for i in {1..256}; do
     if ls *."$i".wav 1> /dev/null 2>&1; then
         echo "$i".wav exists, creating folder...
-	#mkdir -p "$i" && 
-        #mv *."$i".wav "$i"
+	mkdir -p "$i" && mv *."$i".wav "$i"
     else
         echo No more sequentially-numbered files since "$i".wav does not exist
 	echo folderize.sh is done!
@@ -17,4 +16,4 @@ for i in {1..256}; do
     fi
 done
 
-#rm folderize.sh
+rm folderize.sh
